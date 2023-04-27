@@ -7,6 +7,7 @@
   flex-direction: column;
   align-items: center;
   gap: 30px;
+  font-family: monospace;
 }
 
 .title {
@@ -14,11 +15,18 @@
   margin-bottom: 0;
 }
 
+.footer {
+  font-size: 1.1em;
+  color: #727272;
+  text-align: center;
+}
+
 .text {
   width: 80vw;
   height: 200px;
   max-width: 900px;
   resize: none;
+  font-size: 2em;
 }
 
 .keyboard__keys {

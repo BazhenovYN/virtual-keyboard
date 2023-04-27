@@ -1,6 +1,6 @@
 import './normalize.css';
 import './style.scss';
-import { APP_TITLE, keyLayout } from './const';
+import { APP_TITLE, FOOTER, keyLayout } from './const';
 
 class Keyboard {
   constructor() {
@@ -38,9 +38,14 @@ class Keyboard {
     textArea.classList.add('text');
     this.elements.textArea = textArea;
 
+    const footer = document.createElement('div');
+    footer.classList.add('footer');
+    footer.innerText = FOOTER;
+
     this.elements.main.appendChild(title);
     this.elements.main.appendChild(textArea);
     this.elements.main.appendChild(this.elements.keysContainer);
+    this.elements.main.appendChild(footer);
     document.body.appendChild(this.elements.main);
 
     // Add Event Listeners
