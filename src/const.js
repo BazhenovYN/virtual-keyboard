@@ -6,6 +6,10 @@ const firstLine = [
       en: '`',
       ru: 'Ё',
     },
+    shiftLabel: {
+      en: '~',
+      ru: 'Ё',
+    },
   },
   {
     keyCode: 49,
@@ -13,6 +17,10 @@ const firstLine = [
     label: {
       en: '1',
       ru: '1',
+    },
+    shiftLabel: {
+      en: '!',
+      ru: '!',
     },
   },
   {
@@ -22,6 +30,10 @@ const firstLine = [
       en: '2',
       ru: '2',
     },
+    shiftLabel: {
+      en: '@',
+      ru: '"',
+    },
   },
   {
     keyCode: 51,
@@ -29,6 +41,10 @@ const firstLine = [
     label: {
       en: '3',
       ru: '3',
+    },
+    shiftLabel: {
+      en: '#',
+      ru: '№',
     },
   },
   {
@@ -38,6 +54,10 @@ const firstLine = [
       en: '4',
       ru: '4',
     },
+    shiftLabel: {
+      en: '$',
+      ru: ';',
+    },
   },
   {
     keyCode: 53,
@@ -45,6 +65,10 @@ const firstLine = [
     label: {
       en: '5',
       ru: '5',
+    },
+    shiftLabel: {
+      en: '%',
+      ru: '%',
     },
   },
   {
@@ -54,6 +78,10 @@ const firstLine = [
       en: '6',
       ru: '6',
     },
+    shiftLabel: {
+      en: '^',
+      ru: ':',
+    },
   },
   {
     keyCode: 55,
@@ -61,6 +89,10 @@ const firstLine = [
     label: {
       en: '7',
       ru: '7',
+    },
+    shiftLabel: {
+      en: '&',
+      ru: '?',
     },
   },
   {
@@ -70,6 +102,10 @@ const firstLine = [
       en: '8',
       ru: '8',
     },
+    shiftLabel: {
+      en: '*',
+      ru: '*',
+    },
   },
   {
     keyCode: 57,
@@ -77,6 +113,10 @@ const firstLine = [
     label: {
       en: '9',
       ru: '9',
+    },
+    shiftLabel: {
+      en: '(',
+      ru: '(',
     },
   },
   {
@@ -86,6 +126,10 @@ const firstLine = [
       en: '0',
       ru: '0',
     },
+    shiftLabel: {
+      en: ')',
+      ru: ')',
+    },
   },
   {
     keyCode: 189,
@@ -93,6 +137,10 @@ const firstLine = [
     label: {
       en: '-',
       ru: '-',
+    },
+    shiftLabel: {
+      en: '_',
+      ru: '_',
     },
   },
   {
@@ -102,11 +150,19 @@ const firstLine = [
       en: '=',
       ru: '=',
     },
+    shiftLabel: {
+      en: '+',
+      ru: '+',
+    },
   },
   {
     keyCode: 8,
     code: 'backspace',
     label: {
+      en: 'BACKSPACE',
+      ru: 'BACKSPACE',
+    },
+    shiftLabel: {
       en: 'BACKSPACE',
       ru: 'BACKSPACE',
     },
@@ -120,11 +176,19 @@ const secondLine = [
       en: 'TAB',
       ru: 'TAB',
     },
+    shiftLabel: {
+      en: 'TAB',
+      ru: 'TAB',
+    },
   },
   {
     keyCode: 81,
     code: 'KeyQ',
     label: {
+      en: 'Q',
+      ru: 'Й',
+    },
+    shiftLabel: {
       en: 'Q',
       ru: 'Й',
     },
@@ -136,11 +200,19 @@ const secondLine = [
       en: 'W',
       ru: 'Ц',
     },
+    shiftLabel: {
+      en: 'W',
+      ru: 'Ц',
+    },
   },
   {
     keyCode: 69,
     code: 'keyE',
     label: {
+      en: 'E',
+      ru: 'У',
+    },
+    shiftLabel: {
       en: 'E',
       ru: 'У',
     },
@@ -152,11 +224,19 @@ const secondLine = [
       en: 'R',
       ru: 'К',
     },
+    shiftLabel: {
+      en: 'R',
+      ru: 'К',
+    },
   },
   {
     keyCode: 84,
     code: 'keyT',
     label: {
+      en: 'T',
+      ru: 'Е',
+    },
+    shiftLabel: {
       en: 'T',
       ru: 'Е',
     },
@@ -168,11 +248,19 @@ const secondLine = [
       en: 'Y',
       ru: 'Н',
     },
+    shiftLabel: {
+      en: 'Y',
+      ru: 'Н',
+    },
   },
   {
     keyCode: 85,
     code: 'keyU',
     label: {
+      en: 'U',
+      ru: 'Г',
+    },
+    shiftLabel: {
       en: 'U',
       ru: 'Г',
     },
@@ -184,11 +272,19 @@ const secondLine = [
       en: 'I',
       ru: 'Ш',
     },
+    shiftLabel: {
+      en: 'I',
+      ru: 'Ш',
+    },
   },
   {
     keyCode: 79,
     code: 'keyO',
     label: {
+      en: 'O',
+      ru: 'Щ',
+    },
+    shiftLabel: {
       en: 'O',
       ru: 'Щ',
     },
@@ -200,12 +296,20 @@ const secondLine = [
       en: 'P',
       ru: 'З',
     },
+    shiftLabel: {
+      en: 'P',
+      ru: 'З',
+    },
   },
   {
     keyCode: 219,
     code: 'bracketLeft',
     label: {
       en: '[',
+      ru: 'Х',
+    },
+    shiftLabel: {
+      en: '{',
       ru: 'Х',
     },
   },
@@ -216,6 +320,10 @@ const secondLine = [
       en: ']',
       ru: 'Ъ',
     },
+    shiftLabel: {
+      en: '}',
+      ru: 'Ъ',
+    },
   },
   {
     keyCode: 220,
@@ -223,6 +331,10 @@ const secondLine = [
     label: {
       en: '\\',
       ru: '\\',
+    },
+    shiftLabel: {
+      en: '|',
+      ru: '/',
     },
   },
 ];
@@ -234,11 +346,19 @@ const thirdLine = [
       en: 'CAPS LOCK',
       ru: 'CAPS LOCK',
     },
+    shiftLabel: {
+      en: 'CAPS LOCK',
+      ru: 'CAPS LOCK',
+    },
   },
   {
     keyCode: 65,
     code: 'keyA',
     label: {
+      en: 'A',
+      ru: 'Ф',
+    },
+    shiftLabel: {
       en: 'A',
       ru: 'Ф',
     },
@@ -250,11 +370,19 @@ const thirdLine = [
       en: 'S',
       ru: 'Ы',
     },
+    shiftLabel: {
+      en: 'S',
+      ru: 'Ы',
+    },
   },
   {
     keyCode: 68,
     code: 'keyD',
     label: {
+      en: 'D',
+      ru: 'В',
+    },
+    shiftLabel: {
       en: 'D',
       ru: 'В',
     },
@@ -266,11 +394,19 @@ const thirdLine = [
       en: 'F',
       ru: 'А',
     },
+    shiftLabel: {
+      en: 'F',
+      ru: 'А',
+    },
   },
   {
     keyCode: 71,
     code: 'keyG',
     label: {
+      en: 'G',
+      ru: 'П',
+    },
+    shiftLabel: {
       en: 'G',
       ru: 'П',
     },
@@ -282,11 +418,19 @@ const thirdLine = [
       en: 'H',
       ru: 'Р',
     },
+    shiftLabel: {
+      en: 'H',
+      ru: 'Р',
+    },
   },
   {
     keyCode: 74,
     code: 'keyJ',
     label: {
+      en: 'J',
+      ru: 'О',
+    },
+    shiftLabel: {
       en: 'J',
       ru: 'О',
     },
@@ -298,11 +442,19 @@ const thirdLine = [
       en: 'K',
       ru: 'Л',
     },
+    shiftLabel: {
+      en: 'K',
+      ru: 'Л',
+    },
   },
   {
     keyCode: 76,
     code: 'keyL',
     label: {
+      en: 'L',
+      ru: 'Д',
+    },
+    shiftLabel: {
       en: 'L',
       ru: 'Д',
     },
@@ -314,6 +466,10 @@ const thirdLine = [
       en: ';',
       ru: 'Ж',
     },
+    shiftLabel: {
+      en: ':',
+      ru: 'Ж',
+    },
   },
   {
     keyCode: 222,
@@ -322,11 +478,19 @@ const thirdLine = [
       en: '\'',
       ru: 'Э',
     },
+    shiftLabel: {
+      en: '"',
+      ru: 'Э',
+    },
   },
   {
     keyCode: 13,
     code: 'enter',
     label: {
+      en: 'ENTER',
+      ru: 'ENTER',
+    },
+    shiftLabel: {
       en: 'ENTER',
       ru: 'ENTER',
     },
@@ -340,11 +504,19 @@ const forthLine = [
       en: 'SHIFT',
       ru: 'SHIFT',
     },
+    shiftLabel: {
+      en: 'SHIFT',
+      ru: 'SHIFT',
+    },
   },
   {
     keyCode: 90,
     code: 'keyZ',
     label: {
+      en: 'Z',
+      ru: 'Я',
+    },
+    shiftLabel: {
       en: 'Z',
       ru: 'Я',
     },
@@ -356,11 +528,19 @@ const forthLine = [
       en: 'X',
       ru: 'Ч',
     },
+    shiftLabel: {
+      en: 'X',
+      ru: 'Ч',
+    },
   },
   {
     keyCode: 67,
     code: 'keyC',
     label: {
+      en: 'C',
+      ru: 'С',
+    },
+    shiftLabel: {
       en: 'C',
       ru: 'С',
     },
@@ -372,11 +552,19 @@ const forthLine = [
       en: 'V',
       ru: 'М',
     },
+    shiftLabel: {
+      en: 'V',
+      ru: 'М',
+    },
   },
   {
     keyCode: 66,
     code: 'keyB',
     label: {
+      en: 'B',
+      ru: 'И',
+    },
+    shiftLabel: {
       en: 'B',
       ru: 'И',
     },
@@ -388,11 +576,19 @@ const forthLine = [
       en: 'N',
       ru: 'Т',
     },
+    shiftLabel: {
+      en: 'N',
+      ru: 'Т',
+    },
   },
   {
     keyCode: 77,
     code: 'keyM',
     label: {
+      en: 'M',
+      ru: 'Ь',
+    },
+    shiftLabel: {
       en: 'M',
       ru: 'Ь',
     },
@@ -404,12 +600,20 @@ const forthLine = [
       en: ',',
       ru: 'Б',
     },
+    shiftLabel: {
+      en: '<',
+      ru: 'Б',
+    },
   },
   {
     keyCode: 190,
     code: 'period',
     label: {
       en: '.',
+      ru: 'Ю',
+    },
+    shiftLabel: {
+      en: '>',
       ru: 'Ю',
     },
   },
@@ -420,11 +624,19 @@ const forthLine = [
       en: '/',
       ru: '.',
     },
+    shiftLabel: {
+      en: '?',
+      ru: ',',
+    },
   },
   {
     keyCode: 16,
     code: 'shiftRight',
     label: {
+      en: 'SHIFT',
+      ru: 'SHIFT',
+    },
+    shiftLabel: {
       en: 'SHIFT',
       ru: 'SHIFT',
     },
@@ -438,11 +650,19 @@ const fifthLine = [
       en: 'CTRL',
       ru: 'CTRL',
     },
+    shiftLabel: {
+      en: 'CTRL',
+      ru: 'CTRL',
+    },
   },
   {
     keyCode: 91,
     code: 'metaLeft',
     label: {
+      en: 'WIN',
+      ru: 'WIN',
+    },
+    shiftLabel: {
       en: 'WIN',
       ru: 'WIN',
     },
@@ -454,11 +674,19 @@ const fifthLine = [
       en: 'ALT',
       ru: 'ALT',
     },
+    shiftLabel: {
+      en: 'ALT',
+      ru: 'ALT',
+    },
   },
   {
     keyCode: 32,
     code: 'space',
     label: {
+      en: '',
+      ru: '',
+    },
+    shiftLabel: {
       en: '',
       ru: '',
     },
@@ -470,11 +698,19 @@ const fifthLine = [
       en: 'ALT',
       ru: 'ALT',
     },
+    shiftLabel: {
+      en: 'ALT',
+      ru: 'ALT',
+    },
   },
   {
     keyCode: 17,
     code: 'controlRight',
     label: {
+      en: 'CTRL',
+      ru: 'CTRL',
+    },
+    shiftLabel: {
       en: 'CTRL',
       ru: 'CTRL',
     },
@@ -486,11 +722,19 @@ const fifthLine = [
       en: '←',
       ru: '←',
     },
+    shiftLabel: {
+      en: '←',
+      ru: '←',
+    },
   },
   {
     keyCode: 38,
     code: 'arrowUp',
     label: {
+      en: '↑',
+      ru: '↑',
+    },
+    shiftLabel: {
       en: '↑',
       ru: '↑',
     },
@@ -502,11 +746,19 @@ const fifthLine = [
       en: '↓',
       ru: '↓',
     },
+    shiftLabel: {
+      en: '↓',
+      ru: '↓',
+    },
   },
   {
     keyCode: 39,
     code: 'arrowRight',
     label: {
+      en: '→',
+      ru: '→',
+    },
+    shiftLabel: {
       en: '→',
       ru: '→',
     },

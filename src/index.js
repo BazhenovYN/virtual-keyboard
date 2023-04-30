@@ -8,11 +8,12 @@ class Keyboard {
       main: null,
       textArea: null,
       keysContainer: null,
-      keys: [],
     };
     this.properties = {
       value: '',
       capsLock: false,
+      shift: false,
+      availableLanguages: ['en', 'ru'],
       language: 'en',
     };
   }
@@ -26,8 +27,6 @@ class Keyboard {
     this.elements.main.classList.add('keyboard');
     this.elements.keysContainer.classList.add('keyboard__keys');
     this.elements.keysContainer.appendChild(this.createKeys());
-
-    this.elements.keys = this.elements.keysContainer.querySelectorAll('.keyboard__key');
 
     // Add to DOM
     const title = document.createElement('h2');
@@ -54,6 +53,9 @@ class Keyboard {
       if (activeButton) {
         activeButton.classList.add('active');
       }
+      if (event.code === 'ShiftLeft' || event.code === 'ShiftRight') {
+        this.properties.shift = true;
+      }
     });
 
     document.addEventListener('keyup', (event) => {
@@ -61,6 +63,40 @@ class Keyboard {
       if (activeButton) {
         activeButton.classList.remove('active');
       }
+      if (event.code === 'ShiftLeft' || event.code === 'ShiftRight') {
+        this.properties.shift = false;
+      }
+      if (
+        (event.code === 'ShiftLeft' && event.altKey)
+        || (event.code === 'ShiftRight' && event.altKey)
+        || (event.code === 'AltLeft' && event.shiftKey)
+        || (event.code === 'AltRight' && event.shiftKey)
+      ) {
+        this.switchLanguage();
+      }
+    });
+  }
+
+  switchLanguage() {
+    const currLanguage = this.properties.language;
+    const index = this.properties.availableLanguages.indexOf(currLanguage);
+    if (index < this.properties.availableLanguages.length - 1) {
+      this.properties.language = this.properties.availableLanguages[index + 1];
+    } else {
+      [this.properties.language] = this.properties.availableLanguages;
+    }
+    this.updateKeyLabels();
+    return this.properties.language;
+  }
+
+  updateKeyLabels() {
+    keyLayout.forEach((keyRow) => {
+      keyRow.forEach((key) => {
+        const keyElement = document.querySelector(`#${key.code.toLowerCase()}`);
+        if (keyElement.childNodes[0]) {
+          keyElement.childNodes[0].textContent = key.label[this.properties.language];
+        }
+      });
     });
   }
 
@@ -118,9 +154,11 @@ class Keyboard {
             break;
           default:
             keyElement.addEventListener('click', () => {
-              this.elements.textArea.value += this.properties.capsLock
-                ? key.label[this.properties.language].toUpperCase()
-                : key.label[this.properties.language].toLowerCase();
+              const value = this.properties.shift
+                ? key.shiftLabel[this.properties.language]
+                : key.label[this.properties.language];
+              const upperCase = this.properties.capsLock !== this.properties.shift;
+              this.elements.textArea.value += upperCase ? value.toUpperCase() : value.toLowerCase();
             });
             break;
         }
