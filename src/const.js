@@ -351,6 +351,12 @@ const secondLine = [
       ru: '/',
     },
   },
+  {
+    keyCode: 46,
+    code: 'delete',
+    system: true,
+    label: 'DEL',
+  },
 ];
 const thirdLine = [
   {
