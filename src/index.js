@@ -11,6 +11,7 @@ class Keyboard {
       main: null,
       textArea: null,
       keysContainer: null,
+      capsLock: null,
     };
     this.properties = {
       value: '',
@@ -56,6 +57,9 @@ class Keyboard {
       if (activeButton) {
         activeButton.classList.add('active');
       }
+      if (event.code === 'CapsLock') {
+        this.switchCapsLock();
+      }
       if (event.code === 'ShiftLeft' || event.code === 'ShiftRight') {
         this.properties.shift = true;
         this.updateKeyLabels();
@@ -80,6 +84,11 @@ class Keyboard {
         this.switchLanguage();
       }
     });
+  }
+
+  switchCapsLock() {
+    this.properties.capsLock = !this.properties.capsLock;
+    this.elements.capsLock.classList.toggle('capslock_on');
   }
 
   switchLanguage() {
@@ -145,10 +154,10 @@ class Keyboard {
             });
             break;
           case 'capsLock':
+            this.elements.capsLock = keyElement;
             keyElement.appendChild(light);
             keyElement.addEventListener('click', () => {
-              this.properties.capsLock = !this.properties.capsLock;
-              keyElement.classList.toggle('capslock_on');
+              this.switchCapsLock();
             });
             break;
           case 'space':
