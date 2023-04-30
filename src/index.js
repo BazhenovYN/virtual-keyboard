@@ -12,6 +12,7 @@ class Keyboard {
       textArea: null,
       keysContainer: null,
       capsLock: null,
+      shift: null,
     };
     this.properties = {
       value: '',
@@ -62,6 +63,7 @@ class Keyboard {
       }
       if (event.code === 'ShiftLeft' || event.code === 'ShiftRight') {
         this.properties.shift = true;
+        this.elements.shift = null;
         this.updateKeyLabels();
       }
     });
@@ -145,8 +147,6 @@ class Keyboard {
         keyElement.textContent = this.getSymbol(key);
 
         switch (key.code) {
-          case 'shiftLeft':
-          case 'shiftRight':
           case 'controlLeft':
           case 'controlRight':
           case 'altLeft':
@@ -170,6 +170,24 @@ class Keyboard {
               this.switchCapsLock();
             });
             break;
+          case 'shiftLeft':
+          case 'shiftRight':
+            keyElement.addEventListener('click', (event) => {
+              if (this.properties.shift && !this.elements.shift) {
+                return; // user shift key down
+              }
+
+              if (this.properties.shift) {
+                this.elements.shift.classList.remove('active');
+                this.elements.shift = null;
+              } else {
+                event.currentTarget.classList.add('active');
+              }
+              this.elements.shift = event.currentTarget;
+              this.properties.shift = !this.properties.shift;
+              this.updateKeyLabels();
+            });
+            break;
           case 'space':
             keyElement.addEventListener('click', () => {
               this.elements.textArea.value += ' ';
@@ -181,8 +199,13 @@ class Keyboard {
             });
             break;
           default:
-            keyElement.addEventListener('click', () => {
+            keyElement.addEventListener('click', (event) => {
               this.elements.textArea.value += this.getSymbol(key);
+              if (!event.shiftKey && this.properties.shift) {
+                this.properties.shift = false;
+                this.elements.shift.classList.remove('active');
+                this.updateKeyLabels();
+              }
             });
             break;
         }
