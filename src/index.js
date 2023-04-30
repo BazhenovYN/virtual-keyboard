@@ -58,6 +58,7 @@ class Keyboard {
       }
       if (event.code === 'ShiftLeft' || event.code === 'ShiftRight') {
         this.properties.shift = true;
+        this.updateKeyLabels();
       }
     });
 
@@ -68,12 +69,13 @@ class Keyboard {
       }
       if (event.code === 'ShiftLeft' || event.code === 'ShiftRight') {
         this.properties.shift = false;
+        this.updateKeyLabels();
       }
       if (
-        (event.code === 'ShiftLeft' && event.altKey)
-        || (event.code === 'ShiftRight' && event.altKey)
-        || (event.code === 'AltLeft' && event.shiftKey)
-        || (event.code === 'AltRight' && event.shiftKey)
+        (event.code === 'ControlLeft' && event.altKey)
+        || (event.code === 'ControlRight' && event.altKey)
+        || (event.code === 'AltLeft' && event.ctrlKey)
+        || (event.code === 'AltRight' && event.ctrlKey)
       ) {
         this.switchLanguage();
       }
@@ -98,7 +100,10 @@ class Keyboard {
       keyRow.forEach((key) => {
         const keyElement = document.querySelector(`#${key.code.toLowerCase()}`);
         if (keyElement.childNodes[0]) {
-          keyElement.childNodes[0].textContent = key.label[this.properties.language];
+          const value = this.properties.shift
+            ? key.shiftLabel[this.properties.language]
+            : key.label[this.properties.language];
+          keyElement.childNodes[0].textContent = value;
         }
       });
     });
