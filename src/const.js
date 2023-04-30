@@ -765,6 +765,8 @@ const fifthLine = [
   },
 ];
 
+export const EN = 'en';
+export const RU = 'ru';
 export const APP_TITLE = 'RSS Virtual Keyboard';
 export const FOOTER = 'Virtual keyboard created for the MS Windows\nHotkey to change input language is "Alt+Shift"';
 export const keyLayout = [

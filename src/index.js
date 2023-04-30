@@ -1,6 +1,9 @@
 import './normalize.css';
 import './style.scss';
-import { APP_TITLE, FOOTER, keyLayout } from './const';
+import {
+  EN, RU, APP_TITLE, FOOTER, keyLayout,
+} from './const';
+import { getLanguage, setLanguage } from './utils';
 
 class Keyboard {
   constructor() {
@@ -13,8 +16,8 @@ class Keyboard {
       value: '',
       capsLock: false,
       shift: false,
-      availableLanguages: ['en', 'ru'],
-      language: 'en',
+      availableLanguages: [EN, RU],
+      language: getLanguage() || EN,
     };
   }
 
@@ -86,6 +89,7 @@ class Keyboard {
       [this.properties.language] = this.properties.availableLanguages;
     }
     this.updateKeyLabels();
+    setLanguage(this.properties.language);
     return this.properties.language;
   }
 
