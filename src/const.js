@@ -2,6 +2,7 @@ const firstLine = [
   {
     keyCode: 192,
     code: 'backquote',
+    system: false,
     label: {
       en: '`',
       ru: 'Ё',
@@ -14,6 +15,7 @@ const firstLine = [
   {
     keyCode: 49,
     code: 'digit1',
+    system: false,
     label: {
       en: '1',
       ru: '1',
@@ -26,6 +28,7 @@ const firstLine = [
   {
     keyCode: 50,
     code: 'digit2',
+    system: false,
     label: {
       en: '2',
       ru: '2',
@@ -38,6 +41,7 @@ const firstLine = [
   {
     keyCode: 51,
     code: 'digit3',
+    system: false,
     label: {
       en: '3',
       ru: '3',
@@ -50,6 +54,7 @@ const firstLine = [
   {
     keyCode: 52,
     code: 'digit4',
+    system: false,
     label: {
       en: '4',
       ru: '4',
@@ -62,6 +67,7 @@ const firstLine = [
   {
     keyCode: 53,
     code: 'digit5',
+    system: false,
     label: {
       en: '5',
       ru: '5',
@@ -74,6 +80,7 @@ const firstLine = [
   {
     keyCode: 54,
     code: 'digit6',
+    system: false,
     label: {
       en: '6',
       ru: '6',
@@ -86,6 +93,7 @@ const firstLine = [
   {
     keyCode: 55,
     code: 'digit7',
+    system: false,
     label: {
       en: '7',
       ru: '7',
@@ -98,6 +106,7 @@ const firstLine = [
   {
     keyCode: 56,
     code: 'digit8',
+    system: false,
     label: {
       en: '8',
       ru: '8',
@@ -110,6 +119,7 @@ const firstLine = [
   {
     keyCode: 57,
     code: 'digit9',
+    system: false,
     label: {
       en: '9',
       ru: '9',
@@ -122,6 +132,7 @@ const firstLine = [
   {
     keyCode: 48,
     code: 'digit0',
+    system: false,
     label: {
       en: '0',
       ru: '0',
@@ -134,6 +145,7 @@ const firstLine = [
   {
     keyCode: 189,
     code: 'minus',
+    system: false,
     label: {
       en: '-',
       ru: '-',
@@ -146,6 +158,7 @@ const firstLine = [
   {
     keyCode: 187,
     code: 'equal',
+    system: false,
     label: {
       en: '=',
       ru: '=',
@@ -158,6 +171,7 @@ const firstLine = [
   {
     keyCode: 8,
     code: 'backspace',
+    system: true,
     label: {
       en: 'BACKSPACE',
       ru: 'BACKSPACE',
@@ -172,6 +186,7 @@ const secondLine = [
   {
     keyCode: 9,
     code: 'tab',
+    system: true,
     label: {
       en: 'TAB',
       ru: 'TAB',
@@ -184,6 +199,7 @@ const secondLine = [
   {
     keyCode: 81,
     code: 'KeyQ',
+    system: false,
     label: {
       en: 'Q',
       ru: 'Й',
@@ -196,6 +212,7 @@ const secondLine = [
   {
     keyCode: 87,
     code: 'keyW',
+    system: false,
     label: {
       en: 'W',
       ru: 'Ц',
@@ -208,6 +225,7 @@ const secondLine = [
   {
     keyCode: 69,
     code: 'keyE',
+    system: false,
     label: {
       en: 'E',
       ru: 'У',
@@ -220,6 +238,7 @@ const secondLine = [
   {
     keyCode: 82,
     code: 'keyR',
+    system: false,
     label: {
       en: 'R',
       ru: 'К',
@@ -232,6 +251,7 @@ const secondLine = [
   {
     keyCode: 84,
     code: 'keyT',
+    system: false,
     label: {
       en: 'T',
       ru: 'Е',
@@ -244,6 +264,7 @@ const secondLine = [
   {
     keyCode: 89,
     code: 'keyY',
+    system: false,
     label: {
       en: 'Y',
       ru: 'Н',
@@ -256,6 +277,7 @@ const secondLine = [
   {
     keyCode: 85,
     code: 'keyU',
+    system: false,
     label: {
       en: 'U',
       ru: 'Г',
@@ -268,6 +290,7 @@ const secondLine = [
   {
     keyCode: 73,
     code: 'keyI',
+    system: false,
     label: {
       en: 'I',
       ru: 'Ш',
@@ -280,6 +303,7 @@ const secondLine = [
   {
     keyCode: 79,
     code: 'keyO',
+    system: false,
     label: {
       en: 'O',
       ru: 'Щ',
@@ -292,6 +316,7 @@ const secondLine = [
   {
     keyCode: 80,
     code: 'keyP',
+    system: false,
     label: {
       en: 'P',
       ru: 'З',
@@ -304,6 +329,7 @@ const secondLine = [
   {
     keyCode: 219,
     code: 'bracketLeft',
+    system: false,
     label: {
       en: '[',
       ru: 'Х',
@@ -316,6 +342,7 @@ const secondLine = [
   {
     keyCode: 221,
     code: 'bracketRight',
+    system: false,
     label: {
       en: ']',
       ru: 'Ъ',
@@ -328,6 +355,7 @@ const secondLine = [
   {
     keyCode: 220,
     code: 'backslash',
+    system: false,
     label: {
       en: '\\',
       ru: '\\',
@@ -342,6 +370,7 @@ const thirdLine = [
   {
     keyCode: 20,
     code: 'capsLock',
+    system: true,
     label: {
       en: 'CAPS LOCK',
       ru: 'CAPS LOCK',
@@ -354,6 +383,7 @@ const thirdLine = [
   {
     keyCode: 65,
     code: 'keyA',
+    system: false,
     label: {
       en: 'A',
       ru: 'Ф',
@@ -366,6 +396,7 @@ const thirdLine = [
   {
     keyCode: 83,
     code: 'keyS',
+    system: false,
     label: {
       en: 'S',
       ru: 'Ы',
@@ -378,6 +409,7 @@ const thirdLine = [
   {
     keyCode: 68,
     code: 'keyD',
+    system: false,
     label: {
       en: 'D',
       ru: 'В',
@@ -390,6 +422,7 @@ const thirdLine = [
   {
     keyCode: 70,
     code: 'keyF',
+    system: false,
     label: {
       en: 'F',
       ru: 'А',
@@ -402,6 +435,7 @@ const thirdLine = [
   {
     keyCode: 71,
     code: 'keyG',
+    system: false,
     label: {
       en: 'G',
       ru: 'П',
@@ -414,6 +448,7 @@ const thirdLine = [
   {
     keyCode: 72,
     code: 'keyH',
+    system: false,
     label: {
       en: 'H',
       ru: 'Р',
@@ -426,6 +461,7 @@ const thirdLine = [
   {
     keyCode: 74,
     code: 'keyJ',
+    system: false,
     label: {
       en: 'J',
       ru: 'О',
@@ -438,6 +474,7 @@ const thirdLine = [
   {
     keyCode: 75,
     code: 'keyK',
+    system: false,
     label: {
       en: 'K',
       ru: 'Л',
@@ -450,6 +487,7 @@ const thirdLine = [
   {
     keyCode: 76,
     code: 'keyL',
+    system: false,
     label: {
       en: 'L',
       ru: 'Д',
@@ -462,6 +500,7 @@ const thirdLine = [
   {
     keyCode: 186,
     code: 'semicolon',
+    system: false,
     label: {
       en: ';',
       ru: 'Ж',
@@ -474,6 +513,7 @@ const thirdLine = [
   {
     keyCode: 222,
     code: 'quote',
+    system: false,
     label: {
       en: '\'',
       ru: 'Э',
@@ -486,6 +526,7 @@ const thirdLine = [
   {
     keyCode: 13,
     code: 'enter',
+    system: true,
     label: {
       en: 'ENTER',
       ru: 'ENTER',
@@ -500,6 +541,7 @@ const forthLine = [
   {
     keyCode: 16,
     code: 'shiftLeft',
+    system: true,
     label: {
       en: 'SHIFT',
       ru: 'SHIFT',
@@ -512,6 +554,7 @@ const forthLine = [
   {
     keyCode: 90,
     code: 'keyZ',
+    system: false,
     label: {
       en: 'Z',
       ru: 'Я',
@@ -524,6 +567,7 @@ const forthLine = [
   {
     keyCode: 88,
     code: 'keyX',
+    system: false,
     label: {
       en: 'X',
       ru: 'Ч',
@@ -536,6 +580,7 @@ const forthLine = [
   {
     keyCode: 67,
     code: 'keyC',
+    system: false,
     label: {
       en: 'C',
       ru: 'С',
@@ -548,6 +593,7 @@ const forthLine = [
   {
     keyCode: 86,
     code: 'keyV',
+    system: false,
     label: {
       en: 'V',
       ru: 'М',
@@ -560,6 +606,7 @@ const forthLine = [
   {
     keyCode: 66,
     code: 'keyB',
+    system: false,
     label: {
       en: 'B',
       ru: 'И',
@@ -572,6 +619,7 @@ const forthLine = [
   {
     keyCode: 78,
     code: 'keyN',
+    system: false,
     label: {
       en: 'N',
       ru: 'Т',
@@ -584,6 +632,7 @@ const forthLine = [
   {
     keyCode: 77,
     code: 'keyM',
+    system: false,
     label: {
       en: 'M',
       ru: 'Ь',
@@ -596,6 +645,7 @@ const forthLine = [
   {
     keyCode: 188,
     code: 'comma',
+    system: false,
     label: {
       en: ',',
       ru: 'Б',
@@ -608,6 +658,7 @@ const forthLine = [
   {
     keyCode: 190,
     code: 'period',
+    system: false,
     label: {
       en: '.',
       ru: 'Ю',
@@ -620,6 +671,7 @@ const forthLine = [
   {
     keyCode: 191,
     code: 'slash',
+    system: false,
     label: {
       en: '/',
       ru: '.',
@@ -632,6 +684,7 @@ const forthLine = [
   {
     keyCode: 16,
     code: 'shiftRight',
+    system: true,
     label: {
       en: 'SHIFT',
       ru: 'SHIFT',
@@ -646,6 +699,7 @@ const fifthLine = [
   {
     keyCode: 17,
     code: 'controlLeft',
+    system: true,
     label: {
       en: 'CTRL',
       ru: 'CTRL',
@@ -658,6 +712,7 @@ const fifthLine = [
   {
     keyCode: 91,
     code: 'metaLeft',
+    system: true,
     label: {
       en: 'WIN',
       ru: 'WIN',
@@ -670,6 +725,7 @@ const fifthLine = [
   {
     keyCode: 18,
     code: 'altLeft',
+    system: true,
     label: {
       en: 'ALT',
       ru: 'ALT',
@@ -682,6 +738,7 @@ const fifthLine = [
   {
     keyCode: 32,
     code: 'space',
+    system: false,
     label: {
       en: '',
       ru: '',
@@ -694,6 +751,7 @@ const fifthLine = [
   {
     keyCode: 18,
     code: 'altRight',
+    system: true,
     label: {
       en: 'ALT',
       ru: 'ALT',
@@ -706,6 +764,7 @@ const fifthLine = [
   {
     keyCode: 17,
     code: 'controlRight',
+    system: true,
     label: {
       en: 'CTRL',
       ru: 'CTRL',
@@ -718,6 +777,7 @@ const fifthLine = [
   {
     keyCode: 37,
     code: 'arrowLeft',
+    system: false,
     label: {
       en: '←',
       ru: '←',
@@ -730,6 +790,7 @@ const fifthLine = [
   {
     keyCode: 38,
     code: 'arrowUp',
+    system: false,
     label: {
       en: '↑',
       ru: '↑',
@@ -742,6 +803,7 @@ const fifthLine = [
   {
     keyCode: 40,
     code: 'arrowDown',
+    system: false,
     label: {
       en: '↓',
       ru: '↓',
@@ -754,6 +816,7 @@ const fifthLine = [
   {
     keyCode: 39,
     code: 'arrowRight',
+    system: false,
     label: {
       en: '→',
       ru: '→',

@@ -86,9 +86,23 @@ class Keyboard {
     });
   }
 
+  getSymbol(key) {
+    const value = this.properties.shift
+      ? key.shiftLabel[this.properties.language]
+      : key.label[this.properties.language];
+
+    if (key.system) {
+      return value;
+    }
+
+    const upperCase = this.properties.capsLock !== this.properties.shift;
+    return upperCase ? value.toUpperCase() : value.toLowerCase();
+  }
+
   switchCapsLock() {
     this.properties.capsLock = !this.properties.capsLock;
     this.elements.capsLock.classList.toggle('capslock_on');
+    this.updateKeyLabels();
   }
 
   switchLanguage() {
@@ -101,7 +115,6 @@ class Keyboard {
     }
     this.updateKeyLabels();
     setLanguage(this.properties.language);
-    return this.properties.language;
   }
 
   updateKeyLabels() {
@@ -109,10 +122,7 @@ class Keyboard {
       keyRow.forEach((key) => {
         const keyElement = document.querySelector(`#${key.code.toLowerCase()}`);
         if (keyElement.childNodes[0]) {
-          const value = this.properties.shift
-            ? key.shiftLabel[this.properties.language]
-            : key.label[this.properties.language];
-          keyElement.childNodes[0].textContent = value;
+          keyElement.childNodes[0].textContent = this.getSymbol(key);
         }
       });
     });
@@ -132,7 +142,7 @@ class Keyboard {
         const keyElement = document.createElement('button');
         keyElement.classList.add('keyboard__key');
         keyElement.id = key.code.toLowerCase();
-        keyElement.textContent = key.label[this.properties.language];
+        keyElement.textContent = this.getSymbol(key);
 
         switch (key.code) {
           case 'shiftLeft':
@@ -172,11 +182,7 @@ class Keyboard {
             break;
           default:
             keyElement.addEventListener('click', () => {
-              const value = this.properties.shift
-                ? key.shiftLabel[this.properties.language]
-                : key.label[this.properties.language];
-              const upperCase = this.properties.capsLock !== this.properties.shift;
-              this.elements.textArea.value += upperCase ? value.toUpperCase() : value.toLowerCase();
+              this.elements.textArea.value += this.getSymbol(key);
             });
             break;
         }
