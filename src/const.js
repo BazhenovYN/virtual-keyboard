@@ -172,14 +172,7 @@ const firstLine = [
     keyCode: 8,
     code: 'backspace',
     system: true,
-    label: {
-      en: 'BACKSPACE',
-      ru: 'BACKSPACE',
-    },
-    shiftLabel: {
-      en: 'BACKSPACE',
-      ru: 'BACKSPACE',
-    },
+    label: 'BACKSPACE',
   },
 ];
 const secondLine = [
@@ -187,14 +180,7 @@ const secondLine = [
     keyCode: 9,
     code: 'tab',
     system: true,
-    label: {
-      en: 'TAB',
-      ru: 'TAB',
-    },
-    shiftLabel: {
-      en: 'TAB',
-      ru: 'TAB',
-    },
+    label: 'TAB',
   },
   {
     keyCode: 81,
@@ -371,14 +357,7 @@ const thirdLine = [
     keyCode: 20,
     code: 'capsLock',
     system: true,
-    label: {
-      en: 'CAPS LOCK',
-      ru: 'CAPS LOCK',
-    },
-    shiftLabel: {
-      en: 'CAPS LOCK',
-      ru: 'CAPS LOCK',
-    },
+    label: 'CAPS LOCK',
   },
   {
     keyCode: 65,
@@ -527,14 +506,7 @@ const thirdLine = [
     keyCode: 13,
     code: 'enter',
     system: true,
-    label: {
-      en: 'ENTER',
-      ru: 'ENTER',
-    },
-    shiftLabel: {
-      en: 'ENTER',
-      ru: 'ENTER',
-    },
+    label: 'ENTER',
   },
 ];
 const forthLine = [
@@ -542,14 +514,7 @@ const forthLine = [
     keyCode: 16,
     code: 'shiftLeft',
     system: true,
-    label: {
-      en: 'SHIFT',
-      ru: 'SHIFT',
-    },
-    shiftLabel: {
-      en: 'SHIFT',
-      ru: 'SHIFT',
-    },
+    label: 'SHIFT',
   },
   {
     keyCode: 90,
@@ -685,14 +650,7 @@ const forthLine = [
     keyCode: 16,
     code: 'shiftRight',
     system: true,
-    label: {
-      en: 'SHIFT',
-      ru: 'SHIFT',
-    },
-    shiftLabel: {
-      en: 'SHIFT',
-      ru: 'SHIFT',
-    },
+    label: 'SHIFT',
   },
 ];
 const fifthLine = [
@@ -700,131 +658,61 @@ const fifthLine = [
     keyCode: 17,
     code: 'controlLeft',
     system: true,
-    label: {
-      en: 'CTRL',
-      ru: 'CTRL',
-    },
-    shiftLabel: {
-      en: 'CTRL',
-      ru: 'CTRL',
-    },
+    label: 'CTRL',
   },
   {
     keyCode: 91,
     code: 'metaLeft',
     system: true,
-    label: {
-      en: 'WIN',
-      ru: 'WIN',
-    },
-    shiftLabel: {
-      en: 'WIN',
-      ru: 'WIN',
-    },
+    label: 'WIN',
   },
   {
     keyCode: 18,
     code: 'altLeft',
     system: true,
-    label: {
-      en: 'ALT',
-      ru: 'ALT',
-    },
-    shiftLabel: {
-      en: 'ALT',
-      ru: 'ALT',
-    },
+    label: 'ALT',
   },
   {
     keyCode: 32,
     code: 'space',
-    system: false,
-    label: {
-      en: '',
-      ru: '',
-    },
-    shiftLabel: {
-      en: '',
-      ru: '',
-    },
+    system: true,
+    label: '',
   },
   {
     keyCode: 18,
     code: 'altRight',
     system: true,
-    label: {
-      en: 'ALT',
-      ru: 'ALT',
-    },
-    shiftLabel: {
-      en: 'ALT',
-      ru: 'ALT',
-    },
+    label: 'ALT',
   },
   {
     keyCode: 17,
     code: 'controlRight',
     system: true,
-    label: {
-      en: 'CTRL',
-      ru: 'CTRL',
-    },
-    shiftLabel: {
-      en: 'CTRL',
-      ru: 'CTRL',
-    },
+    label: 'CTRL',
   },
   {
     keyCode: 37,
     code: 'arrowLeft',
-    system: false,
-    label: {
-      en: '←',
-      ru: '←',
-    },
-    shiftLabel: {
-      en: '←',
-      ru: '←',
-    },
+    system: true,
+    label: '←',
   },
   {
     keyCode: 38,
     code: 'arrowUp',
-    system: false,
-    label: {
-      en: '↑',
-      ru: '↑',
-    },
-    shiftLabel: {
-      en: '↑',
-      ru: '↑',
-    },
+    system: true,
+    label: '↑',
   },
   {
     keyCode: 40,
     code: 'arrowDown',
-    system: false,
-    label: {
-      en: '↓',
-      ru: '↓',
-    },
-    shiftLabel: {
-      en: '↓',
-      ru: '↓',
-    },
+    system: true,
+    label: '↓',
   },
   {
     keyCode: 39,
     code: 'arrowRight',
-    system: false,
-    label: {
-      en: '→',
-      ru: '→',
-    },
-    shiftLabel: {
-      en: '→',
-      ru: '→',
-    },
+    system: true,
+    label: '→',
   },
 ];
 

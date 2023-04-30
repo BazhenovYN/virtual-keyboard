@@ -89,14 +89,12 @@ class Keyboard {
   }
 
   getSymbol(key) {
+    if (key.system) {
+      return key.label;
+    }
     const value = this.properties.shift
       ? key.shiftLabel[this.properties.language]
       : key.label[this.properties.language];
-
-    if (key.system) {
-      return value;
-    }
-
     const upperCase = this.properties.capsLock !== this.properties.shift;
     return upperCase ? value.toUpperCase() : value.toLowerCase();
   }
