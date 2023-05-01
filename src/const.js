@@ -1,6 +1,5 @@
 const firstLine = [
   {
-    keyCode: 192,
     code: 'backquote',
     system: false,
     label: {
@@ -13,7 +12,6 @@ const firstLine = [
     },
   },
   {
-    keyCode: 49,
     code: 'digit1',
     system: false,
     label: {
@@ -26,7 +24,6 @@ const firstLine = [
     },
   },
   {
-    keyCode: 50,
     code: 'digit2',
     system: false,
     label: {
@@ -39,7 +36,6 @@ const firstLine = [
     },
   },
   {
-    keyCode: 51,
     code: 'digit3',
     system: false,
     label: {
@@ -52,7 +48,6 @@ const firstLine = [
     },
   },
   {
-    keyCode: 52,
     code: 'digit4',
     system: false,
     label: {
@@ -65,7 +60,6 @@ const firstLine = [
     },
   },
   {
-    keyCode: 53,
     code: 'digit5',
     system: false,
     label: {
@@ -78,7 +72,6 @@ const firstLine = [
     },
   },
   {
-    keyCode: 54,
     code: 'digit6',
     system: false,
     label: {
@@ -91,7 +84,6 @@ const firstLine = [
     },
   },
   {
-    keyCode: 55,
     code: 'digit7',
     system: false,
     label: {
@@ -104,7 +96,6 @@ const firstLine = [
     },
   },
   {
-    keyCode: 56,
     code: 'digit8',
     system: false,
     label: {
@@ -117,7 +108,6 @@ const firstLine = [
     },
   },
   {
-    keyCode: 57,
     code: 'digit9',
     system: false,
     label: {
@@ -130,7 +120,6 @@ const firstLine = [
     },
   },
   {
-    keyCode: 48,
     code: 'digit0',
     system: false,
     label: {
@@ -143,7 +132,6 @@ const firstLine = [
     },
   },
   {
-    keyCode: 189,
     code: 'minus',
     system: false,
     label: {
@@ -156,7 +144,6 @@ const firstLine = [
     },
   },
   {
-    keyCode: 187,
     code: 'equal',
     system: false,
     label: {
@@ -169,7 +156,6 @@ const firstLine = [
     },
   },
   {
-    keyCode: 8,
     code: 'backspace',
     system: true,
     label: 'BACKSPACE',
@@ -177,13 +163,11 @@ const firstLine = [
 ];
 const secondLine = [
   {
-    keyCode: 9,
     code: 'tab',
     system: true,
     label: 'TAB',
   },
   {
-    keyCode: 81,
     code: 'KeyQ',
     system: false,
     label: {
@@ -196,7 +180,6 @@ const secondLine = [
     },
   },
   {
-    keyCode: 87,
     code: 'keyW',
     system: false,
     label: {
@@ -209,7 +192,6 @@ const secondLine = [
     },
   },
   {
-    keyCode: 69,
     code: 'keyE',
     system: false,
     label: {
@@ -222,7 +204,6 @@ const secondLine = [
     },
   },
   {
-    keyCode: 82,
     code: 'keyR',
     system: false,
     label: {
@@ -235,7 +216,6 @@ const secondLine = [
     },
   },
   {
-    keyCode: 84,
     code: 'keyT',
     system: false,
     label: {
@@ -248,7 +228,6 @@ const secondLine = [
     },
   },
   {
-    keyCode: 89,
     code: 'keyY',
     system: false,
     label: {
@@ -261,7 +240,6 @@ const secondLine = [
     },
   },
   {
-    keyCode: 85,
     code: 'keyU',
     system: false,
     label: {
@@ -274,7 +252,6 @@ const secondLine = [
     },
   },
   {
-    keyCode: 73,
     code: 'keyI',
     system: false,
     label: {
@@ -287,7 +264,6 @@ const secondLine = [
     },
   },
   {
-    keyCode: 79,
     code: 'keyO',
     system: false,
     label: {
@@ -300,7 +276,6 @@ const secondLine = [
     },
   },
   {
-    keyCode: 80,
     code: 'keyP',
     system: false,
     label: {
@@ -313,7 +288,6 @@ const secondLine = [
     },
   },
   {
-    keyCode: 219,
     code: 'bracketLeft',
     system: false,
     label: {
@@ -326,7 +300,6 @@ const secondLine = [
     },
   },
   {
-    keyCode: 221,
     code: 'bracketRight',
     system: false,
     label: {
@@ -339,7 +312,6 @@ const secondLine = [
     },
   },
   {
-    keyCode: 220,
     code: 'backslash',
     system: false,
     label: {
@@ -352,7 +324,6 @@ const secondLine = [
     },
   },
   {
-    keyCode: 46,
     code: 'delete',
     system: true,
     label: 'DEL',
@@ -360,13 +331,11 @@ const secondLine = [
 ];
 const thirdLine = [
   {
-    keyCode: 20,
     code: 'capsLock',
     system: true,
     label: 'CAPS LOCK',
   },
   {
-    keyCode: 65,
     code: 'keyA',
     system: false,
     label: {
@@ -379,7 +348,6 @@ const thirdLine = [
     },
   },
   {
-    keyCode: 83,
     code: 'keyS',
     system: false,
     label: {
@@ -392,7 +360,6 @@ const thirdLine = [
     },
   },
   {
-    keyCode: 68,
     code: 'keyD',
     system: false,
     label: {
@@ -405,7 +372,6 @@ const thirdLine = [
     },
   },
   {
-    keyCode: 70,
     code: 'keyF',
     system: false,
     label: {
@@ -418,7 +384,6 @@ const thirdLine = [
     },
   },
   {
-    keyCode: 71,
     code: 'keyG',
     system: false,
     label: {
@@ -431,7 +396,6 @@ const thirdLine = [
     },
   },
   {
-    keyCode: 72,
     code: 'keyH',
     system: false,
     label: {
@@ -444,7 +408,6 @@ const thirdLine = [
     },
   },
   {
-    keyCode: 74,
     code: 'keyJ',
     system: false,
     label: {
@@ -457,7 +420,6 @@ const thirdLine = [
     },
   },
   {
-    keyCode: 75,
     code: 'keyK',
     system: false,
     label: {
@@ -470,7 +432,6 @@ const thirdLine = [
     },
   },
   {
-    keyCode: 76,
     code: 'keyL',
     system: false,
     label: {
@@ -483,7 +444,6 @@ const thirdLine = [
     },
   },
   {
-    keyCode: 186,
     code: 'semicolon',
     system: false,
     label: {
@@ -496,7 +456,6 @@ const thirdLine = [
     },
   },
   {
-    keyCode: 222,
     code: 'quote',
     system: false,
     label: {
@@ -509,7 +468,6 @@ const thirdLine = [
     },
   },
   {
-    keyCode: 13,
     code: 'enter',
     system: true,
     label: 'ENTER',
@@ -517,13 +475,11 @@ const thirdLine = [
 ];
 const forthLine = [
   {
-    keyCode: 16,
     code: 'shiftLeft',
     system: true,
     label: 'SHIFT',
   },
   {
-    keyCode: 90,
     code: 'keyZ',
     system: false,
     label: {
@@ -536,7 +492,6 @@ const forthLine = [
     },
   },
   {
-    keyCode: 88,
     code: 'keyX',
     system: false,
     label: {
@@ -549,7 +504,6 @@ const forthLine = [
     },
   },
   {
-    keyCode: 67,
     code: 'keyC',
     system: false,
     label: {
@@ -562,7 +516,6 @@ const forthLine = [
     },
   },
   {
-    keyCode: 86,
     code: 'keyV',
     system: false,
     label: {
@@ -575,7 +528,6 @@ const forthLine = [
     },
   },
   {
-    keyCode: 66,
     code: 'keyB',
     system: false,
     label: {
@@ -588,7 +540,6 @@ const forthLine = [
     },
   },
   {
-    keyCode: 78,
     code: 'keyN',
     system: false,
     label: {
@@ -601,7 +552,6 @@ const forthLine = [
     },
   },
   {
-    keyCode: 77,
     code: 'keyM',
     system: false,
     label: {
@@ -614,7 +564,6 @@ const forthLine = [
     },
   },
   {
-    keyCode: 188,
     code: 'comma',
     system: false,
     label: {
@@ -627,7 +576,6 @@ const forthLine = [
     },
   },
   {
-    keyCode: 190,
     code: 'period',
     system: false,
     label: {
@@ -640,7 +588,6 @@ const forthLine = [
     },
   },
   {
-    keyCode: 191,
     code: 'slash',
     system: false,
     label: {
@@ -653,7 +600,6 @@ const forthLine = [
     },
   },
   {
-    keyCode: 16,
     code: 'shiftRight',
     system: true,
     label: 'SHIFT',
@@ -661,61 +607,51 @@ const forthLine = [
 ];
 const fifthLine = [
   {
-    keyCode: 17,
     code: 'controlLeft',
     system: true,
     label: 'CTRL',
   },
   {
-    keyCode: 91,
     code: 'metaLeft',
     system: true,
     label: 'WIN',
   },
   {
-    keyCode: 18,
     code: 'altLeft',
     system: true,
     label: 'ALT',
   },
   {
-    keyCode: 32,
     code: 'space',
     system: true,
     label: '',
   },
   {
-    keyCode: 18,
     code: 'altRight',
     system: true,
     label: 'ALT',
   },
   {
-    keyCode: 17,
     code: 'controlRight',
     system: true,
     label: 'CTRL',
   },
   {
-    keyCode: 37,
     code: 'arrowLeft',
     system: true,
     label: '←',
   },
   {
-    keyCode: 38,
     code: 'arrowUp',
     system: true,
     label: '↑',
   },
   {
-    keyCode: 40,
     code: 'arrowDown',
     system: true,
     label: '↓',
   },
   {
-    keyCode: 39,
     code: 'arrowRight',
     system: true,
     label: '→',
