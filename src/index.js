@@ -40,6 +40,7 @@ class Keyboard {
 
     const textArea = document.createElement('textarea');
     textArea.classList.add('text');
+    textArea.autofocus = true;
     this.elements.textArea = textArea;
 
     const footer = document.createElement('div');
@@ -86,6 +87,13 @@ class Keyboard {
         this.switchLanguage();
       }
     });
+
+    textArea.addEventListener('keydown', (event) => {
+      if (event.code === 'Tab') {
+        event.preventDefault();
+        this.addSymbolInTextArea('\t');
+      }
+    });
   }
 
   getSymbol(key) {
@@ -97,6 +105,19 @@ class Keyboard {
       : key.label[this.properties.language];
     const upperCase = this.properties.capsLock !== this.properties.shift;
     return upperCase ? value.toUpperCase() : value.toLowerCase();
+  }
+
+  addSymbolInTextArea(symbol) {
+    const text = this.elements.textArea;
+
+    const start = text.selectionStart;
+    const end = text.selectionEnd;
+
+    text.value = `${text.value.slice(0, start)}${symbol}${text.value.slice(end)}`;
+
+    text.setSelectionRange(start + 1, start + 1);
+
+    text.focus();
   }
 
   switchCapsLock() {
@@ -153,12 +174,40 @@ class Keyboard {
             break;
           case 'tab':
             keyElement.addEventListener('click', () => {
-              this.elements.textArea.value += '\t';
+              this.addSymbolInTextArea('\t');
             });
             break;
           case 'backspace':
             keyElement.addEventListener('click', () => {
-              this.elements.textArea.value = this.elements.textArea.value.slice(0, -1);
+              const text = this.elements.textArea;
+
+              const end = text.selectionEnd;
+              const start = end === text.selectionStart
+                ? text.selectionStart - 1
+                : text.selectionStart;
+
+              if (start >= 0) {
+                text.value = text.value.slice(0, start) + text.value.slice(end);
+                text.selectionStart = start;
+                text.selectionEnd = start;
+              }
+
+              text.focus();
+            });
+            break;
+          case 'delete':
+            keyElement.addEventListener('click', () => {
+              const text = this.elements.textArea;
+
+              const start = text.selectionStart;
+              const end = start === text.selectionEnd
+                ? text.selectionEnd + 1
+                : text.selectionEnd;
+
+              text.value = text.value.slice(0, start) + text.value.slice(end);
+              text.selectionStart = start;
+              text.selectionEnd = start;
+              text.focus();
             });
             break;
           case 'capsLock':
@@ -188,17 +237,19 @@ class Keyboard {
             break;
           case 'space':
             keyElement.addEventListener('click', () => {
-              this.elements.textArea.value += ' ';
+              this.addSymbolInTextArea(' ');
             });
             break;
           case 'enter':
             keyElement.addEventListener('click', () => {
-              this.elements.textArea.value += '\n';
+              this.addSymbolInTextArea('\n');
             });
             break;
           default:
             keyElement.addEventListener('click', (event) => {
-              this.elements.textArea.value += this.getSymbol(key);
+              const symbol = this.getSymbol(key);
+              this.addSymbolInTextArea(symbol);
+
               if (!event.shiftKey && this.properties.shift) {
                 this.properties.shift = false;
                 this.elements.shift.classList.remove('active');
