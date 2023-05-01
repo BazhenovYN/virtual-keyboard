@@ -88,11 +88,15 @@ class Keyboard {
       }
     });
 
-    textArea.addEventListener('keydown', (event) => {
+    this.elements.textArea.addEventListener('keydown', (event) => {
       if (event.code === 'Tab') {
         event.preventDefault();
         this.addSymbolInTextArea('\t');
       }
+    });
+
+    this.elements.keysContainer.addEventListener('click', () => {
+      this.elements.textArea.focus();
     });
   }
 
@@ -116,8 +120,6 @@ class Keyboard {
     text.value = `${text.value.slice(0, start)}${symbol}${text.value.slice(end)}`;
 
     text.setSelectionRange(start + 1, start + 1);
-
-    text.focus();
   }
 
   switchCapsLock() {
@@ -191,8 +193,6 @@ class Keyboard {
                 text.selectionStart = start;
                 text.selectionEnd = start;
               }
-
-              text.focus();
             });
             break;
           case 'delete':
@@ -207,7 +207,6 @@ class Keyboard {
               text.value = text.value.slice(0, start) + text.value.slice(end);
               text.selectionStart = start;
               text.selectionEnd = start;
-              text.focus();
             });
             break;
           case 'capsLock':
